@@ -1,0 +1,31 @@
+<table *ngFor="let user of Users$">
+  <!--   The Head of The Table -->
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Username</th>
+      <th>Email</th>
+      <th>Address</th>
+    </tr>
+    <!--  End of The Head -->
+  </thead>
+  <!--   The Body of The Table -->
+  <tbody>
+    <!--          First Row -->
+    <tr>
+      <td><img src="" /></td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.username }}</td>
+      <td>{{ user.email }}</td>
+      <td>
+        <span class="blue">{{ user.address.street }}</span
+        ><span class="pink">Delete</span>
+      </td>
+    </tr>
+    <!--         Second Row -->
+
+    <!-- End of The of The Table -->
+  </tbody>
+  <!-- End of The Table -->
+</table>
